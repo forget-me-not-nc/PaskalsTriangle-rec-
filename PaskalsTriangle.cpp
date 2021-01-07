@@ -5,8 +5,8 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-int Factorial(int num);
-int Combinations(int n, int k);
+long long Factorial(int num);
+long long Combinations(int n, int k);
 
 int main()
 {
@@ -35,7 +35,7 @@ int main()
 	return 0;
 }
 
-int Factorial(int num)
+long long Factorial(int num)
 {
 	if (num == 0 || num == 1) return 1;
 
@@ -43,7 +43,7 @@ int Factorial(int num)
 }
 
 
-int Combinations(int n, int m)
+long long Combinations(int n, int m)
 {
 	return (Factorial(n) / (Factorial(m) * Factorial(n - m)));
 }
